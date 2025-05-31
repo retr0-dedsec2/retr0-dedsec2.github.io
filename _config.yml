@@ -16,11 +16,11 @@ timezone:
 
 title: retr0-dedsec2 # the main title
 
-tagline: pentest in ctf and bug bounty coding in c, c++, python, java # it will display as the subtitle
+tagline: pentest in ctf coding in c, c++, python, java # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Welcome to my blog
-  my name is Gabin Gagno i do pentest in ctf and trying bugbounty for funny and i coding in c, c++, python, java
+  my name is retro2 i do pentest in ctf and trying bugbounty for funny and i coding in c, c++, python, java
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -35,8 +35,8 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Gabin Gagno
-  email: gabingagno45@gmail.com # change to your email address
+  name: retro2
+  email: ytblgbglgbg@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link 
     - https://github.com/retro2-dedsec # change to your GitHub homepage
