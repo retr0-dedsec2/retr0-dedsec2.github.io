@@ -1,3 +1,9 @@
+---
+title: "Mon premier article"
+date: 2025-06-04 18:00:00 +0200
+categories: [Blog, Actualités]
+tags: [Chirpy, Jekyll, Blog]
+---
 # 🛡️ Projet Cyber : Système de Contrôle Parental Réseau avec C++ & IA
 
 ## Présentation du projet
