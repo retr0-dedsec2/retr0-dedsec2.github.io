@@ -1,0 +1,13 @@
+- title: "Scan réseau Python"
+  date: "2025-06-22"
+  categories: ["Projets"]
+  tags: ["Python", "Réseau"]
+  description: "Un scanner réseau avec affichage graphique des appareils."
+  github: "https://github.com/tonpseudo/scanreseau"
+
+- title: "CTF HackTheBox - Nibbles"
+  date: "2025-06-21"
+  categories: ["Challenges"]
+  tags: ["HackTheBox", "CTF"]
+  description: "Challenge CTF terminé : accès root via exploit RFI."
+  writeup: "https://retr0-dedsec2.github.io/challenges/nibbles"
