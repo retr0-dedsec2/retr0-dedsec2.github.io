@@ -2,7 +2,7 @@
 title: "Scanner réseau local visuel"
 date: 2025-05-12 00:00:00 +0200
 categories: ['Actualités']
-tags: ['Python', 'Réseau', 'Tkinter']
+tags: []
 ---
 
 Application Windows pour scanner le réseau local et afficher visuellement les appareils connectés.
