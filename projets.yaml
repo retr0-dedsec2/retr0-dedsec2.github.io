@@ -4,42 +4,60 @@
   description: |
     Application Windows pour scanner le réseau local et afficher visuellement les appareils connectés.
     Permet de détecter les IP, les MAC et de couper l'accès Internet de manière ciblée.
-  github: "https://github.com/retr0-dedsec2/network-visual-scanner"
-  writeup: |
+
     ### Fonctionnalités
     - Scan ARP ou Nmap
     - Interface graphique Tkinter
     - Couper l'accès à Internet via ARP spoofing
+
+    ### Code source
+
+    ```bash
+    git clone https://github.com/retr0-dedsec2/network-visual-scanner
+    ```
 
 - title: "Système de contrôle parental en C++"
   date: "2025-05-04"
   categories: ["Actualités"]
   description: |
     Un système client-serveur local permettant à un parent de contrôler l'accès Internet de l'appareil de l'enfant.
-  github: "https://github.com/retr0-dedsec2/controle-parental"
+
+    ### Code source
+
+    ```bash
+    git clone https://github.com/retr0-dedsec2/controle-parental
+    ```
 
 - title: "Bot de blog automatique pour Chirpy"
   date: "2025-06-24"
   categories: ["Actualités"]
   description: |
     Un script Python qui lit un fichier YAML pour générer automatiquement des articles de blog compatibles avec le thème Chirpy.
-  github: "https://github.com/retr0-dedsec2/bot-blog"
+
+    ### Code source
+
+    ```bash
+    git clone https://github.com/retr0-dedsec2/bot-blog
+    ```
 
 - title: "Application Expo Go avec messagerie et appels"
   date: "2025-05-16"
   categories: ["Actualités"]
-  tags: ["React Native", "Firebase", "WebRTC"]
   description: |
     Application mobile complète avec authentification, messagerie, appels vocaux WebRTC, canaux, et enregistrement vidéo social quotidien.
-  github: "https://github.com/retr0-dedsec2/social-secure-app"
+
+    ### Code source
+
+    ```bash
+    git clone https://github.com/retr0-dedsec2/social-secure-app
+    ```
 
 - title: "Challenge HackTheBox - Nibbles"
   date: "2025-06-10"
   categories: ["Actualités"]
-  tags: ["CTF", "HackTheBox", "Web Exploit"]
   description: |
     Challenge CTF réussi sur HackTheBox en exploitant une vulnérabilité RFI sur un CMS pour obtenir un reverse shell.
-  writeup: |
+
     ### Accès initial
     Scan Nmap → CMS détecté avec page `nibbleblog`.
 
@@ -52,10 +70,10 @@
 - title: "Challenge Root-Me - PHP Include"
   date: "2025-05-20"
   categories: ["Actualités"]
-  tags: ["CTF", "Root-Me", "PHP"]
   description: |
     Exploitation d'une faille LFI pour lire `/etc/passwd`, puis accès à une backdoor admin.
-  writeup: |
+
+    ### Exploit
     Accès via manipulation de l’URL : `?page=../../../../etc/passwd`
     → Détection d’un fichier admin caché
     → Auth bypass avec injection basique
