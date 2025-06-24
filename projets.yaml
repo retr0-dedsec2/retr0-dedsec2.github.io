@@ -1,7 +1,6 @@
 - title: "Scanner réseau local visuel"
   date: "2025-05-12"
   categories: ["Actualités"]
-  tags: ["Python", "Réseau", "Tkinter"]
   description: |
     Application Windows pour scanner le réseau local et afficher visuellement les appareils connectés.
     Permet de détecter les IP, les MAC et de couper l'accès Internet de manière ciblée.
@@ -15,7 +14,6 @@
 - title: "Système de contrôle parental en C++"
   date: "2025-05-04"
   categories: ["Actualités"]
-  tags: ["C++", "Sockets", "Contrôle parental"]
   description: |
     Un système client-serveur local permettant à un parent de contrôler l'accès Internet de l'appareil de l'enfant.
   github: "https://github.com/retr0-dedsec2/controle-parental"
@@ -23,7 +21,6 @@
 - title: "Bot de blog automatique pour Chirpy"
   date: "2025-06-24"
   categories: ["Actualités"]
-  tags: ["Python", "GitHub Pages", "Automation"]
   description: |
     Un script Python qui lit un fichier YAML pour générer automatiquement des articles de blog compatibles avec le thème Chirpy.
   github: "https://github.com/retr0-dedsec2/bot-blog"
