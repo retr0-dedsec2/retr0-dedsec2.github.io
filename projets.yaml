@@ -1,6 +1,7 @@
 - title: "Scanner réseau local visuel"
   date: "2025-05-12"
-  categories: ["Actualités"]
+  categories: ["Projets"]
+  tags: ["Python", "Réseau", "Tkinter"]
   description: |
     Application Windows pour scanner le réseau local et afficher visuellement les appareils connectés.
     Permet de détecter les IP, les MAC et de couper l'accès Internet de manière ciblée.
@@ -18,9 +19,11 @@
 
 - title: "Système de contrôle parental en C++"
   date: "2025-05-04"
-  categories: ["Actualités"]
+  categories: ["Projets"]
+  tags: ["C++", "Sockets", "Contrôle parental"]
   description: |
-    Un système client-serveur local permettant à un parent de contrôler l'accès Internet de l'appareil de l'enfant.
+    Système client-serveur local pour contrôler l'accès à Internet d'un appareil distant via réseau local.  
+    L'app "parent" se connecte à l'app "enfant" via sockets, et peut bloquer des sites ou couper le réseau.
 
     ### Code source
 
@@ -28,11 +31,13 @@
     git clone https://github.com/retr0-dedsec2/controle-parental
     ```
 
-- title: "Bot de blog automatique pour Chirpy"
+- title: "Bot automatique de génération d’articles pour Chirpy"
   date: "2025-06-24"
-  categories: ["Actualités"]
+  categories: ["Projets"]
+  tags: ["Python", "GitHub Pages", "Automatisation"]
   description: |
-    Un script Python qui lit un fichier YAML pour générer automatiquement des articles de blog compatibles avec le thème Chirpy.
+    Script Python lisant un fichier YAML pour générer des posts Jekyll (Chirpy) automatiquement dans `_posts/`.
+    Intègre le commit/push automatique vers GitHub.
 
     ### Code source
 
@@ -40,11 +45,17 @@
     git clone https://github.com/retr0-dedsec2/bot-blog
     ```
 
-- title: "Application Expo Go avec messagerie et appels"
+- title: "Application Expo Go avec messagerie et appels sécurisés"
   date: "2025-05-16"
-  categories: ["Actualités"]
+  categories: ["Projets"]
+  tags: ["React Native", "Firebase", "WebRTC", "Expo"]
   description: |
-    Application mobile complète avec authentification, messagerie, appels vocaux WebRTC, canaux, et enregistrement vidéo social quotidien.
+    Application mobile avec :
+    - Authentification Firebase
+    - Canaux de discussion
+    - Messagerie privée
+    - Appels vocaux en WebRTC
+    - Vidéo journalière pour réseau social privé
 
     ### Code source
 
@@ -54,26 +65,41 @@
 
 - title: "Challenge HackTheBox - Nibbles"
   date: "2025-06-10"
-  categories: ["Actualités"]
+  categories: ["Challenges"]
+  tags: ["CTF", "HackTheBox", "Web Exploit"]
   description: |
-    Challenge CTF réussi sur HackTheBox en exploitant une vulnérabilité RFI sur un CMS pour obtenir un reverse shell.
+    Challenge CTF terminé avec succès sur HackTheBox.
+    Exploitation d'une faille RFI dans Nibbleblog, suivi d'une élévation de privilèges via script root.
 
-    ### Accès initial
-    Scan Nmap → CMS détecté avec page `nibbleblog`.
+    ### Reconnaissance
+
+    ```bash
+    nmap -A 10.10.10.X
+    ```
+
+    CMS détecté sur `/nibbleblog`. Login admin bruteforcé.
 
     ### Exploit
-    Upload d’un fichier PHP via une vulnérabilité RFI.
+
+    Téléversement d’un reverse shell via une page vulnérable.  
+    Shell obtenu sur l'utilisateur `nibbles`.
 
     ### Escalade
-    Sudo mal configuré : root shell via exécution de script en tant qu’admin.
 
-- title: "Challenge Root-Me - PHP Include"
+    `sudo -l` montre un script root accessible → root shell.
+
+- title: "Challenge Root-Me - PHP Local File Inclusion"
   date: "2025-05-20"
-  categories: ["Actualités"]
+  categories: ["Challenges"]
+  tags: ["CTF", "Root-Me", "PHP", "LFI"]
   description: |
-    Exploitation d'une faille LFI pour lire `/etc/passwd`, puis accès à une backdoor admin.
+    Exploitation d'une vulnérabilité LFI sur une URL `?page=...`.  
+    Lecture de `/etc/passwd`, détection d’un fichier admin, contournement d’authentification.
 
-    ### Exploit
-    Accès via manipulation de l’URL : `?page=../../../../etc/passwd`
-    → Détection d’un fichier admin caché
-    → Auth bypass avec injection basique
+    ### Payload utilisé
+
+    ```
+    ?page=../../../../etc/passwd
+    ```
+
+    Puis upload d’un fichier PHP pour obtenir un shell.
